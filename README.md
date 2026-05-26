@@ -1,18 +1,26 @@
-# Human Advisory — Explicit AI Code badge
+![Human Advisory — Explicit AI Code](human-advisory.svg)
 
-A pure-CSS replica of the classic RIAA **Parental Advisory — Explicit Content** sticker, reimagined for the AI age. Drop it on your website, repo, docs, or demo to warn humans: **explicit AI-generated code ahead**.
+# EXPLICIT AI CODE
 
-![screenshot](human-advisory.svg)
+This code was made by AI. This badge makes it visible. No hiding, no bullshit, no "oops this might be AI."
 
-## Why
+Drop the sticker. Own what you built.
 
-AI-generated code is everywhere. Most of it is invisible — no label, no disclosure, no warning. The Human Advisory badge puts that warning back. It says: *this was made by a machine, read with care*.
+## What it is
 
-Inspired by the 1996 Parental Advisory label. Same proportions, same bold monochrome bands. Different warning.
+A pure-HTML+CSS replica of the 1996 RIAA Parental Advisory label. Same proportions. Same monochrome bands. Different message: **this is AI generated.**
+
+Two CSS links, one div. No JavaScript. No build tools. No framework. Zero dependencies. Works everywhere.
+
+```
+HUMAN     ← black band, white text
+ADVISORY  ← white band, black text
+EXPLICIT AI CODE ← black band, white text
+```
 
 ## Usage
 
-### 1. Link the CSS + font
+### 1. Link it up
 
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,16 +39,16 @@ Inspired by the 1996 Parental Advisory label. Same proportions, same bold monoch
 </div>
 ```
 
-That's it. No JavaScript. No build step. No framework.
+That's it. You're done. Your AI code is labeled.
 
 ### Custom text
 
-Change the three `<span>` contents to anything you want:
+Change the three `<span>` to say whatever hits:
 
 ```html
-<div class="human-advisory" role="img" aria-label="Advisory Notice">
-  <div class="ha-top"><span>WARNING</span></div>
-  <div class="ha-mid"><span>HUMAN</span></div>
+<div class="human-advisory" role="img" aria-label="Made by AI">
+  <div class="ha-top"><span>MADE BY</span></div>
+  <div class="ha-mid"><span>MACHINE</span></div>
   <div class="ha-bot"><span>READ WITH CARE</span></div>
 </div>
 ```
@@ -49,40 +57,55 @@ Change the three `<span>` contents to anything you want:
 
 | Attribute | Effect |
 |-----------|--------|
-| `data-size="xs"` | Extra small — 8rem width |
-| `data-size="small"` | Small — 12rem width |
-| *(default)* | Default — 20rem width |
-| `data-size="large"` | Large — 28rem width |
-| `data-size="xl"` | Extra large — 40rem width |
-| `data-tilt="true"` | Rotated -2° with drop shadow (sticker-on-vinyl look) |
+| `data-size="xs"` | Extra small — 8rem |
+| `data-size="small"` | Small — 12rem |
+| *(default)* | Medium — 20rem |
+| `data-size="large"` | Large — 28rem |
+| `data-size="xl"` | Extra large — 40rem |
+| `data-tilt="true"` | Tilted -2°, drop shadow (stuck-on-vinyl look) |
 | `data-invert="true"` | Inverted colors for dark backgrounds |
-| `data-hover-invert="true"` | Invert colors on hover (interactive) |
+| `data-hover-invert="true"` | Inverts on hover. Interactive. Fun. |
 
-Combine attributes freely: `data-size="large" data-tilt="true"`
+Stack 'em: `data-size="large" data-tilt="true" data-hover-invert="true"`
 
 ## Files
 
-| File | Purpose |
-|------|---------|
-| `human-advisory.css` | Standalone badge styles (~3 KB) |
-| `human-advisory.html` | Demo page with all variants |
-| `human-advisory.svg` | SVG render (no font dependency) |
+| File | What it does |
+|------|-------------|
+| `human-advisory.css` | All the styles. ~3KB. Standalone. |
+| `human-advisory.html` | Demo page with every variant. Open it, see it. |
+| `human-advisory.svg` | Vector badge. No font needed. Repo-ready. |
+
+## Why this exists
+
+AI code is flooding the web. Most of it is invisible — no label, no disclosure, no nothing. That's not transparency, that's a ghost ship.
+
+The Human Advisory badge puts the label back. You see AI-generated code? You know it. You read it different. That's the whole point.
+
+Inspired by the 1996 Parental Advisory sticker. Same shape. Same vibe. Different generation.
 
 ## License
 
-MIT — free to use, modify, and distribute. Attribution welcome, not required.
+MIT — free to use, remix, share, sell, whatever. Attribution is cool but not required.
 
-If you use this badge on a public site, consider linking back to the repo so others can find it.
+If you slap this on a public site, drop a link back so the next person can find it too.
 
-## Future ideas
+## Font note
 
-- **Hover-invert** — interactive badge that inverts on hover (implemented, see `data-hover-invert`)
-- **Animated** — subtle band animation (pulse, scroll, blink)
-- **JS binding** — programmatic `setText(top, mid, bot)` helper
-- **npm package** — install via `npm install human-advisory`
-- **Web Component** — `<human-advisory text="AI GENERATED">` custom element
-- **Dark reader** — detects `prefers-color-scheme: dark` and auto-inverts
-- **Accessibility** — improved screen-reader descriptions for dynamic text
+The badge uses **League Gothic** for that wide, compressed warning-label look — a proprietary typeface (not included in this repo). It loads from Google Fonts.
+
+For the SVG badge in this README, we fall back to Arial Black / system fonts since GitHub's README renderer can't load Google Fonts. Looks close enough. If you want the real thing on your own site, just link the Google Fonts URL as shown in the embed snippet above.
+
+**Working open alternatives are welcome.** If you find (or make) a font that matches the same proportions under an open license, open an issue or a PR.
+
+## What's next
+
+- Animated bands (pulse, scroll, blink)
+- JS helper: `badge.setText("HUMAN", "ADVISORY", "YOUR TEXT")`
+- Web Component: `<human-advisory text="AI GENERATED">`
+- npm package: `npm install human-advisory`
+- Dark mode auto-detect
+- More themes (neon, terminal, retro, glitch)
 
 ---
 

@@ -1,71 +1,78 @@
-# Launch Strategy — human-advisory
+# Launch Strategy — HUMAN ADVISORY: EXPLICIT AI CODE
 
-## Goal
+## The play
 
-Make the Human Advisory badge visible, discoverable, and easy to adopt so it spreads across the web as a convention for flagging AI-generated content.
+This isn't a "disclosure tool." This is a badge that says **this code was made by AI** — bold, upfront, no apology. We're not asking permission. We're putting the sticker on the web.
 
-## Target audience
+## Who this hits
 
-- Open-source maintainers who want to label AI-generated code in their repos
-- Web developers building AI-assisted projects who want transparent disclosure
-- Bloggers / newsletter writers writing about AI
-- Designers who want a recognizable warning badge for AI-generated UI
+- **Devs who ship AI code** and want to be honest about it
+- **OSS maintainers** tired of pretending AI diffs are hand-written
+- **Designers** who want the visual punch of the classic Parental Advisory label
+- **Anyone with a GitHub repo** that's mostly LLM output
 
 ## Channels
 
 ### 1. GitHub
-- **Tags:** `css-badge`, `ai-disclosure`, `warning-label`, `parental-advisory`, `explicit-ai-content`
-- **Topics on repo:** `css`, `badge`, `ai`, `disclosure`, `warning`, `parental-advisory`, `web-component`
-- **Pin a demo gif** in the README showing the badge on different backgrounds
-- **Submit to:** [awesome-badges](https://github.com/awesome-badges), [awesome-css](https://github.com/awesome-css), CSS-Tricks (if they still accept tips)
 
-### 2. Social / dev communities
-- **Hacker News** — Show HN post: "Show HN: Human Advisory – A CSS badge for AI-generated code"
-  - Best time: weekday morning US time
-  - Title should explain what it is, not what it's made of: "Show HN: Human Advisory – the 'Explicit Content' sticker for AI code"
-- **Lobsters** — same post, community is more design-aware
-- **Reddit:** r/webdev, r/css, r/programming, r/MachineLearning
-  - Add custom flair per subreddit rules
-- **X/Twitter** — share demo GIF + embed snippet with #HumanAdvisory #AIDisclosure #CSS
+- **Topics:** `css`, `badge`, `ai`, `ai-code`, `explicit-ai-code`, `human-advisory`, `warning-label`
+- Pin the SVG in README so it shows in search results
+- Submit to: awesome-badges, awesome-css
 
-### 3. Direct outreach
-- **AI disclosure advocates** — tweet at or DM people pushing for AI labeling (e.g., @emilymbender, @simonw, @kelseyhightower)
-- **Newsletters** — CSS Weekly, Frontend Focus, JavaScript Weekly (submit as open-source project spotlight)
+### 2. Hacker News
 
-### 4. Embed in Trentuna ecosystem
-- Already used on `trentuna.com` as a live demo
-- Add to garden catalog entry for the badge
-- Reference from the garden homepage as a featured project
+Show HN — "EXPLICIT AI CODE: a CSS badge for AI-generated code"
+Best time: Tuesday morning US. Title says what it is, not what it's made of.
+
+### 3. Reddit
+
+r/webdev, r/css, r/programming, r/MachineLearning
+Post the demo page, let the badge speak for itself. The sticker is recognizable. That's the hook.
+
+### 4. X / Twitter
+
+Demo GIF + embed snippet. Hashtags: #ExplicitAICode #HumanAdvisory #AIBadge
+
+Tag people who talk about AI transparency (@kelseyhightower, @simonw, @emilymbender). Not asking permission — showing them the badge exists. They'll either use it or not.
+
+### 5. Dev communities
+
+Lobsters, CSS Weekly, Frontend Focus, JavaScript Weekly
 
 ## Pitch lines
 
-> "A pure-CSS 'Explicit Content' sticker for AI-generated code. Drop it anywhere. No JS, no build tools."
+> "Your AI code needs a label. This is it. Two lines of CSS."
 
-> "Your users deserve to know when they're reading machine-generated work. This badge makes it visible."
+> "No JS. No build. No excuses. EXPLICIT AI CODE — drop it anywhere."
 
-> "The Parental Advisory label was invented in 1996. AI needs its own warning sign."
+> "The Parental Advisory label warned you about lyrics. This warns you about code."
+
+> "AI made this. We put a sticker on it. Deal with it."
 
 ## Viral hooks
 
-- **Low friction** — literally 3 lines of HTML + 1 CSS link to use
-- **Nostalgia** — everyone recognizes the RIAA sticker
-- **Timely** — AI disclosure is an active debate (EU AI Act, GitHub Copilot labeling)
-- **Customizable** — change the text to "AI GENERATED", "SYNTHETIC", "TRAINED ON", etc.
+- **Zero friction** — 2 CSS links, 1 div. Done.
+- **Everyone knows the sticker** — nostalgia hits hard
+- **Timing** — EU AI Act, GitHub Copilot labeling debate, everyone talking about AI disclosure
+- **Customizable** — change the text to anything. The structure stays.
+- **Controversy-friendly** — some people hate AI labeling. Some love it. Both sides share it.
 
-## Future milestones
+## Future
 
-| Phase | Description |
-|-------|-------------|
-| v1.0  | Pure CSS badge + variants (current) |
-| v1.1  | npm package + unpkg CDN link |
-| v1.2  | Web Component (`<human-advisory>`) |
-| v2.0  | JS binding for dynamic text + themes |
-| v2.1  | premium theme pack (neon, terminal, retro) |
+| Phase | What |
+|-------|------|
+| v1.0 | Pure CSS badge + variants (shipped) |
+| v1.1 | npm package + CDN |
+| v1.2 | Web Component: `<human-advisory text="AI">` |
+| v2.0 | JS API for dynamic themes |
+| v2.1 | Theme pack (neon, glitch, terminal, retro) |
 
-## Metrics to track
+## Metrics
 
-- GitHub stars and forks
+- GitHub stars
 - npm downloads (when published)
-- Number of repos using the badge (GitHub search: "human-advisory.css")
-- Social mentions (#HumanAdvisory)
-- Feedback / issues from real users
+- Repos using the badge (GitHub search: "human-advisory.css")
+- Social mentions
+- Issues from real users
+
+Track everything. Ship fast. Iterate.

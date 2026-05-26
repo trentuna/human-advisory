@@ -1,15 +1,15 @@
 # AGENTS.md — releases/human-advisory
 
-Human Advisory label system — CSS/HTML badge and advisory components for AI-generated content disclosure.
+Human Advisory badge — CSS/HTML sticker for AI-generated code, inspired by the RIAA Parental Advisory label.
 
 ## What lives here
 
 - `human-advisory.css` — standalone badge styles (~3 KB)
 - `human-advisory.html` — demo page with all variants
 - `human-advisory.svg` — SVG render (no font dependency)
-- `README.md` — public documentation with usage guide
+- `README.md` — public documentation
 - `LICENSE` — MIT
-- `LAUNCH.md` — go-to-market strategy for public release
+- `LAUNCH.md` — go-to-market strategy
 - `AGENTS.md` — this file (agent instructions)
 
 ## Agent: Vigo
@@ -29,7 +29,8 @@ Vigo maintains this release:
 
 ## Status
 
-- **Type:** release / UI component kit
-- **Status:** active — public GitHub repo ready for launch
+- **Type:** release / UI component
+- **Status:** ready for review — all badges use "EXPLICIT AI CODE" text
 - **Variants:** xs, small, default, large, xl, tilt, invert, hover-invert
-- **Remote:** GitHub (trentuna/human-advisory)
+- **Remote:** pending — needs trentuna org access or Ludo to create repo
+- **GH token (vigilio-desto):** not a member of trentuna org
