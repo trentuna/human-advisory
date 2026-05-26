@@ -20,14 +20,13 @@ EXPLICIT AI CODE ← black band, white text
 
 ## Usage
 
-### 1. Link it up
+### 1. Link the CSS
 
 ```html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="human-advisory.css">
 ```
+
+The League Gothic font is **embedded** in the CSS (OFL-1.1 license). No external font loads, no Google Fonts dependency, works offline.
 
 ### 2. Drop the badge
 
