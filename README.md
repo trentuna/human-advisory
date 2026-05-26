@@ -1,4 +1,4 @@
-![Human Advisory — Explicit AI Code](human-advisory-badge.png)
+![Human Advisory — Explicit AI Code](human-advisory.png)
 
 # EXPLICIT AI CODE
 
@@ -73,7 +73,7 @@ Stack 'em: `data-size="large" data-tilt="true" data-hover-invert="true"`
 |------|-------------|
 | `human-advisory.css` | All the styles. ~3KB. Standalone. |
 | `human-advisory.html` | Demo page with every variant. Open it, see it. |
-| `human-advisory.svg` | Vector badge. No font needed. Repo-ready. |
+| `human-advisory.png` | Vector badge. No font needed. Repo-ready. |
 
 ## Why this exists
 
