@@ -30,7 +30,8 @@ Vigo maintains this release:
 ## Status
 
 - **Type:** release / UI component
-- **Status:** ready for review — all badges use "EXPLICIT AI CODE" text
+- **Status:** ready to push — all final edits applied, commit c3a8952 pending
 - **Variants:** xs, small, default, large, xl, tilt, invert, hover-invert
-- **Remote:** pending — needs trentuna org access or Ludo to create repo
+- **Remote:** pending — needs trentuna org access. Create `trentuna/human-advisory` on GitHub and Vigo pushes.
 - **GH token (vigilio-desto):** not a member of trentuna org
+- **Last:** hover border stays black, font note added, README explains SVG fallback
