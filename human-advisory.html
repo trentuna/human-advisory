@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Human Advisory — Parental Advisory replica</title>
+<meta name="description" content="Pure-CSS replica of the RIAA Parental Advisory — Explicit Content label, using League Gothic (SIL OFL).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="human-advisory.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    min-height: 100vh;
+    background: #fcfcfa;
+    color: #121212;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    padding: 48px 24px 96px;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; }
+  header { margin-bottom: 40px; }
+  h1 {
+    font-family: "League Gothic", sans-serif;
+    font-size: clamp(48px, 9vw, 96px);
+    line-height: 0.9;
+    letter-spacing: 0.01em;
+    margin: 0;
+    transform: scaleY(1.15);
+    transform-origin: left top;
+  }
+  header p { margin-top: 24px; max-width: 640px; line-height: 1.6; }
+  h2 {
+    font-family: "League Gothic", sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #d8d8d2;
+    padding-bottom: 8px;
+  }
+  section { margin-bottom: 56px; }
+  pre {
+    background: #fff;
+    border: 1px solid #d8d8d2;
+    padding: 16px;
+    font-size: 13px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow: auto;
+  }
+  .sizes { display: flex; gap: 32px; align-items: flex-end; flex-wrap: wrap; }
+  .note { font-size: 13px; opacity: 0.7; margin-top: 12px; }
+  .ref { font-size: 14px; opacity: 0.75; line-height: 1.6; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>HUMAN ADVISORY</h1>
+      <p>
+        A pure-CSS replica of the 1996 RIAA <em>Parental Advisory</em> sticker.
+        Open-source font (League Gothic, SIL OFL), correct band ratios
+        reverse-engineered from the original SVG, and glyphs vertically
+        stretched to fill each band like the real label.
+      </p>
+    </header>
+
+    <section>
+      <h2>Default</h2>
+      <div class="human-advisory" role="img" aria-label="Parental Advisory — Explicit Content">
+        <div class="ha-top"><span>PARENTAL</span></div>
+        <div class="ha-mid"><span>ADVISORY</span></div>
+        <div class="ha-bot"><span>EXPLICIT CONTENT</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sizes</h2>
+      <div class="sizes">
+        <div class="human-advisory" data-size="xs" role="img" aria-label="Parental Advisory — Explicit Content">
+          <div class="ha-top"><span>PARENTAL</span></div>
+          <div class="ha-mid"><span>ADVISORY</span></div>
+          <div class="ha-bot"><span>EXPLICIT CONTENT</span></div>
+        </div>
+        <div class="human-advisory" data-size="small" role="img" aria-label="Parental Advisory — Explicit Content">
+          <div class="ha-top"><span>PARENTAL</span></div>
+          <div class="ha-mid"><span>ADVISORY</span></div>
+          <div class="ha-bot"><span>EXPLICIT CONTENT</span></div>
+        </div>
+        <div class="human-advisory" role="img" aria-label="Parental Advisory — Explicit Content">
+          <div class="ha-top"><span>PARENTAL</span></div>
+          <div class="ha-mid"><span>ADVISORY</span></div>
+          <div class="ha-bot"><span>EXPLICIT CONTENT</span></div>
+        </div>
+        <div class="human-advisory" data-size="large" role="img" aria-label="Parental Advisory — Explicit Content">
+          <div class="ha-top"><span>PARENTAL</span></div>
+          <div class="ha-mid"><span>ADVISORY</span></div>
+          <div class="ha-bot"><span>EXPLICIT CONTENT</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tilted (sticker on vinyl)</h2>
+      <div style="padding: 24px 0;">
+        <div class="human-advisory" data-tilt="true" role="img" aria-label="Parental Advisory — Explicit Content">
+          <div class="ha-top"><span>PARENTAL</span></div>
+          <div class="ha-mid"><span>ADVISORY</span></div>
+          <div class="ha-bot"><span>EXPLICIT CONTENT</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Inverted (dark background)</h2>
+      <div style="padding: 24px; background: #1a1a1a; border-radius: 8px;">
+        <div class="human-advisory" data-invert="true" role="img" aria-label="Parental Advisory — Explicit Content">
+          <div class="ha-top"><span>PARENTAL</span></div>
+          <div class="ha-mid"><span>ADVISORY</span></div>
+          <div class="ha-bot"><span>EXPLICIT CONTENT</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Hover invert (interactive)</h2>
+      <div style="padding: 24px 0;">
+        <div class="human-advisory" data-hover-invert="true" role="img" aria-label="Parental Advisory — Explicit Content">
+          <div class="ha-top"><span>PARENTAL</span></div>
+          <div class="ha-mid"><span>ADVISORY</span></div>
+          <div class="ha-bot"><span>EXPLICIT CONTENT</span></div>
+        </div>
+      </div>
+      <p class="note">Hover over the badge above to invert colors.</p>
+    </section>
+
+    <section>
+      <h2>Remix — Explicit AI Code</h2>
+      <div class="human-advisory" data-size="large" data-tilt="true" role="img" aria-label="Human Advisory — Explicit AI Code">
+        <div class="ha-top"><span>HUMAN</span></div>
+        <div class="ha-mid"><span>ADVISORY</span></div>
+        <div class="ha-bot"><span>EXPLICIT AI CODE</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Embed snippet</h2>
+<pre>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic&amp;display=swap"&gt;
+&lt;link rel="stylesheet" href="human-advisory.css"&gt;
+
+&lt;div class="human-advisory" role="img" aria-label="Parental Advisory — Explicit Content"&gt;
+  &lt;div class="ha-top"&gt;&lt;span&gt;PARENTAL&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="ha-mid"&gt;&lt;span&gt;ADVISORY&lt;/span&gt;&lt;/div&gt;
+  &lt;div class="ha-bot"&gt;&lt;span&gt;EXPLICIT CONTENT&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+      <p class="note">
+        Drop the CSS and HTML snippet anywhere. Font loads from Google Fonts.
+        Use custom text in the spans for different messages (e.g. "HUMAN" / "ADVISORY" / "EXPLICIT AI CODE").
+      </p>
+    </section>
+
+    <section>
+      <h2>The original (for reference)</h2>
+      <p class="ref">
+        Original: 147.5 × 92.2 mm · 3 bands at ~28% / ~41% / ~31% · font
+        "Garage Gothic Bold" (proprietary). Replica uses
+        <strong>League Gothic</strong> — the closest open-source match.
+      </p>
+    </section>
+  </div>
+</body>
+</html>
