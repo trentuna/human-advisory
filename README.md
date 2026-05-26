@@ -1,4 +1,4 @@
-![Human Advisory — Explicit AI Code](human-advisory.svg)
+![Human Advisory — Explicit AI Code](human-advisory-badge.png)
 
 # EXPLICIT AI CODE
 
