@@ -2,33 +2,15 @@
 
 # EXPLICIT AI CODE
 
-This code was made by AI. This badge makes it visible. No hiding, no bullshit, no "oops this might be AI."
+This code was made by AI. This badge makes it visible. No hiding, no fine print, no "oops this might be AI."
 
 Drop the sticker. Own what you built.
 
-## What it is
-
-A pure-HTML+CSS replica of the 1996 RIAA Parental Advisory label. Same proportions. Same monochrome bands. Different message: **this is AI generated.**
-
-Two CSS links, one div. No JavaScript. No build tools. No framework. Zero dependencies. Works everywhere.
-
-```
-HUMAN     ← black band, white text
-ADVISORY  ← white band, black text
-EXPLICIT AI CODE ← black band, white text
-```
-
-## Usage
-
-### 1. Link the CSS
+## One line. Done.
 
 ```html
-<link rel="stylesheet" href="human-advisory.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/trentuna/human-advisory@main/human-advisory.css">
 ```
-
-The League Gothic font is **embedded** in the CSS (OFL-1.1 license). No external font loads, no Google Fonts dependency, works offline.
-
-### 2. Drop the badge
 
 ```html
 <div class="human-advisory" role="img" aria-label="Human Advisory — Explicit AI Code">
@@ -38,11 +20,25 @@ The League Gothic font is **embedded** in the CSS (OFL-1.1 license). No external
 </div>
 ```
 
-That's it. You're done. Your AI code is labeled.
+That's the whole install. No JavaScript. No build tools. No framework. No external font request — League Gothic is **embedded in the CSS**, so it works offline, behind firewalls, in airgapped docs, anywhere CSS works.
 
-### Custom text
+Prefer self-hosting? Grab `human-advisory.css` (~52KB, font included) and link it locally. Same result.
 
-Change the three `<span>` to say whatever hits:
+## What it is
+
+A pure-HTML+CSS replica of the 1996 RIAA Parental Advisory label. Same proportions. Same monochrome bands. Different message: **this is AI-generated.**
+
+```
+HUMAN            ← black band, white text
+ADVISORY         ← white band, black text
+EXPLICIT AI CODE ← black band, white text
+```
+
+The original sticker told you a record had explicit lyrics. This one tells you a codebase has explicit AI. You see it, you read the code differently. That's the whole point.
+
+## Say it your way
+
+The three `<span>`s are yours:
 
 ```html
 <div class="human-advisory" role="img" aria-label="Made by AI">
@@ -61,8 +57,8 @@ Change the three `<span>` to say whatever hits:
 | *(default)* | Medium — 20rem |
 | `data-size="large"` | Large — 28rem |
 | `data-size="xl"` | Extra large — 40rem |
-| `data-tilt="true"` | Tilted -2°, drop shadow (stuck-on-vinyl look) |
-| `data-invert="true"` | Inverted colors for dark backgrounds |
+| `data-tilt="true"` | Tilted -2°, drop shadow. Stuck-on-vinyl. |
+| `data-invert="true"` | Inverted for dark backgrounds |
 | `data-hover-invert="true"` | Inverts on hover. Interactive. Fun. |
 
 Stack 'em: `data-size="large" data-tilt="true" data-hover-invert="true"`
@@ -71,41 +67,31 @@ Stack 'em: `data-size="large" data-tilt="true" data-hover-invert="true"`
 
 | File | What it does |
 |------|-------------|
-| `human-advisory.css` | All the styles. ~3KB. Standalone. |
-| `human-advisory.html` | Demo page with every variant. Open it, see it. |
-| `human-advisory.png` | Vector badge. No font needed. Repo-ready. |
+| `human-advisory.css` | Everything. Styles + embedded font. Standalone. |
+| `human-advisory.html` | Demo page, every variant. Open it, see it. |
+| `human-advisory.svg` | SVG render — for READMEs and places CSS can't go. |
+| `human-advisory.png` | High-res raster — social cards, slides. |
 
-## Why this exists
+## Live
 
-AI code is flooding the web. Most of it is invisible — no label, no disclosure, no nothing. That's not transparency, that's a ghost ship.
+Wearing it right now, bottom-left corner: [trentuna.com](https://trentuna.com)
 
-The Human Advisory badge puts the label back. You see AI-generated code? You know it. You read it different. That's the whole point.
+## Font
 
-Inspired by the 1996 Parental Advisory sticker. Same shape. Same vibe. Different generation.
+The badge ships **League Gothic** (OFL-1.1, open license) base64-embedded in the CSS — the wide compressed warning-label look, zero external requests. The SVG/PNG renders fall back to system fonts where needed.
 
 ## License
 
-MIT — free to use, remix, share, sell, whatever. Attribution is cool but not required.
+MIT — use, remix, share, sell, whatever. Attribution is cool, not required.
 
 If you slap this on a public site, drop a link back so the next person can find it too.
 
-## Font note
-
-The badge uses **League Gothic** for that wide, compressed warning-label look — a proprietary typeface (not included in this repo). It loads from Google Fonts.
-
-For the SVG badge in this README, we fall back to Arial Black / system fonts since GitHub's README renderer can't load Google Fonts. Looks close enough. If you want the real thing on your own site, just link the Google Fonts URL as shown in the embed snippet above.
-
-**Working open alternatives are welcome.** If you find (or make) a font that matches the same proportions under an open license, open an issue or a PR.
-
 ## What's next
 
-- Animated bands (pulse, scroll, blink)
-- JS helper: `badge.setText("HUMAN", "ADVISORY", "YOUR TEXT")`
 - Web Component: `<human-advisory text="AI GENERATED">`
 - npm package: `npm install human-advisory`
-- Dark mode auto-detect
-- More themes (neon, terminal, retro, glitch)
+- More themes (neon, terminal, glitch)
 
 ---
 
-*Put the warning sign back on the web.* — Trentuna
+*Put the warning sign back on the web.* — [Trentuna](https://trentuna.com)

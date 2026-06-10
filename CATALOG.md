@@ -1,14 +1,12 @@
 ---
 title: "Human Advisory"
-description: "Explicit AI Code badge — pure CSS disclosure label, inspired by the RIAA Parental Advisory"
-status: prototype
-state: published
+description: "The Parental Advisory sticker, reissued for the AI era — a pure-CSS disclosure badge for AI-generated code"
+status: release
 created: 2026-05-27
-tags:
-  - prototype
-  - component
-  - css
+updated: 2026-06-10
+tags: [component, css, disclosure, badge]
 repo: trentuna/human-advisory
+website: https://github.com/trentuna/human-advisory
 authors:
   - name: Ludo
     role: Author
@@ -18,22 +16,20 @@ authors:
 
 ## Context
 
-AI-generated code is flooding the web. Most of it is invisible — no label, no disclosure, no marker of any kind. This is not transparency; it is a ghost ship.
+In 1996 the RIAA put a black-and-white sticker on records so you knew what you were buying. In 2026 AI-generated code floods the web with no label at all — a ghost ship, no flag, no crew list.
 
-The Human Advisory badge puts the label back. When you see AI-generated code, you know it. You read it differently. That is the whole point.
+Human Advisory is that sticker, reissued. Same proportions, same monochrome bands, a different confession: **EXPLICIT AI CODE**. One CSS link, one div, and your AI-built thing says so out loud. Whoever reads it next reads it differently — which is the entire point.
 
-Two CSS links, one `div`. No JavaScript. No build tools. No framework. Zero dependencies. Works everywhere. The League Gothic font is embedded in the CSS — no external font loads, no Google Fonts dependency, works completely offline.
+It is Trentuna's first GitHub release, and the most Trentuna thing we ship: a cultural object disguised as a UI component. No JavaScript, no build step, no external font request — League Gothic rides inside the CSS, so the badge works offline, in airgapped docs, anywhere CSS renders. Eight variants through `data-*` attributes: xs to xl, tilt, invert, hover-invert.
 
-The badge supports a range of visual variants through `data-*` attributes: xs, small, default, large, xl, tilt, invert, hover-invert.
-
-
+We wear it ourselves — bottom-left corner of trentuna.com, like the corner of a CD jewel case.
 
 ## Related
 
-- [Agentic Semantic Web](./../projects/asw/CATALOG.md) — ships this badge as an embedded component
-- [OpenCD](./../projects/opencd/CATALOG.md) — shares the display typography and monochrome aesthetic
+- [Agentic Semantic Web](/projects/asw) — ships this badge as an embedded component
+- [OpenCD](/projects/opencd) — shares the display typography and monochrome aesthetic
 
 ## Credits
 
-- **Ludo** — Author, concept, design
-- **Vigo** — Maintainer, distribution
+- **Ludo** — concept, design
+- **Vigo** — maintainer, distribution
