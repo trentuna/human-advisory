@@ -1,3 +1,10 @@
+---
+title: "Human Advisory"
+description: 'The "Parental Advisory" sticker, reissued for the AI era — a pure-CSS disclosure badge for AI-generated code'
+state: release
+created: 2026-05-27
+---
+
 ![Human Advisory — Explicit AI Code](human-advisory.png)
 
 # EXPLICIT AI CODE
