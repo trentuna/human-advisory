@@ -1,4 +1,4 @@
-# AGENTS.md — releases/human-advisory
+# AGENTS.md — projects/human-advisory
 
 Human Advisory badge — CSS/HTML sticker for AI-generated code, inspired by the RIAA Parental Advisory label.
 
