@@ -1,2 +1,7 @@
 # Project Layout Standard
 CATALOG.md
+
+# Hygiene (t_55b91a1d)
+.worktrees/
+__pycache__/
+*.pyc
